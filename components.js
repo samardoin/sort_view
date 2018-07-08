@@ -7,6 +7,8 @@ window.onload=function(){
   enter=document.getElementById('enter');
 
   colorRect(0,0,canvas.width,canvas.height,'whiteSmoke');
+
+  startSorting(null,[5,4,3,2,1,49,22,9,18,9]);
 }
 
 function colorRect(x,y,w,h,color){
@@ -15,5 +17,6 @@ function colorRect(x,y,w,h,color){
 }
 
 function clicked(){
+  //enter.disabled=true;
   console.log(sorts.value);
 }
